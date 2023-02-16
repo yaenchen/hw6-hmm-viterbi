@@ -2,14 +2,14 @@ import copy
 import numpy as np
 class ViterbiAlgorithm:
     """_summary_
-    """
+    """    
 
     def __init__(self, hmm_object):
         """_summary_
 
         Args:
             hmm_object (_type_): _description_
-        """        
+        """              
         self.hmm_object = hmm_object
 
     def best_hidden_state_sequence(self, decode_observation_states: np.ndarray) -> np.ndarray:
@@ -20,11 +20,7 @@ class ViterbiAlgorithm:
 
         Returns:
             np.ndarray: _description_
-        """        """_summary_
-
-        Args:
-            decode_observation_states (np.ndarray): _description_
-        """
+        """        
         
         # Initialize path (i.e., np.arrays) to store the hidden sequence states returning the maximum probability
         path = np.zeros((len(decode_observation_states), 

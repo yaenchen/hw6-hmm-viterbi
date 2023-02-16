@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.abspath('../../src/models'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'hw6-hmm'
+project = 'hw6-hmm-viterbi'
 copyright = '2023, Andrew Blair'
 author = 'Andrew Blair'
 
