@@ -40,7 +40,7 @@ Specifically, we can use (maximum) likelihood to infer the underlying sequence o
 hidden_states = ['encode_atac', 'atac'] # The two cCRE selection strategies, in order
 ```
 
-**Testable Hypothesis Question**: Can an HMM instantiated from primitive CMs in the _**TBX5**_ TAD be used to decode the regulatory observation states for *progenitor* CMs in the same genomic region (i.e., the _**TBX5**_ TAD)? 
+**Testable Hypothesis Question**: Can an HMM instantiated from progenitor CMs in the _**TBX5**_ TAD be used to decode the regulatory observation states for primitive CMs in the same genomic region (i.e., the _**TBX5**_ TAD)? 
 
 Prior **observation states**, **transitions**, and **emission** probabilities were computed for the progenitor CMs. Specifically, we created a *sliding window* of size *60 kilobases* (no overlaps) over the *TBX5* TAD to define the inputs of an instantiated HMM class we make for you.
 
