@@ -108,7 +108,7 @@ We recommend completing these deliverables in the listed order:
 
 - First focus on understanding and then implementing the Viterbi algorithm (piece meal style) with **simple** unit tests (i.e., assert statements) as checkpoints for edge and user cases.
 
-- The **user case one** example was reviewed in lecture (slides 13-74). Here is the link for the slide deck titled ["Hidden Markov Models Inferring Academic Success"](https://docs.google.com/presentation/d/1-iE4dxesqii9MoBC5x3jcZ3tv7kLjSqpeB1Xfeeb5vQ/edit#slide=id.g205428ee7e4_0_515)
+- The use case reviewed in lecture can be found at the path hw6-hmm-viterbi/test/test_user_case.py in the pytest function **test_use_case_lecture**. Here is the link to the presentation titled ["Hidden Markov Models Inferring Academic Success"](https://docs.google.com/presentation/d/1-iE4dxesqii9MoBC5x3jcZ3tv7kLjSqpeB1Xfeeb5vQ/edit#slide=id.g205428ee7e4_0_515) (refer to slides 13-74).
 
 The unit test inputs and (simple) assert checks for **user case one** have already been defined for you as an example.
 
@@ -117,15 +117,10 @@ def test_user_case_one():
     """_summary_
     """
     # index annotation observation_states=[i,j]    
-    observation_states = ['committed','ambivalent'] # A graduate student's dedication to their rotation lab
+    observation_states = ['on-time','late'] 
 
     # index annotation hidden_states=[i,j]
-    hidden_states = ['R01','R21'] # The NIH funding source of the graduate student's rotation project 
-
-    #NOTE: Another use case example to consider:
-    # Example 1: 
-    # observation_states = ['EHR', 'molecular'] # Rotation project data-type
-    # hidden_states = ['Nature','Cell'] # Publication journal or impact factor
+    hidden_states = ['no-traffic','traffic']
 
     # PONDERING QUESTION: How would a user define/compute their own HMM instantiation inputs to decode the hidden states for their use case observations?
     use_case_one_data = np.load('./data/UserCase-One.npz')
