@@ -102,7 +102,7 @@ We recommend completing these deliverables in the listed order:
     - Please note, Visual Studio Code supports an extension called [autoDocstring](https://github.com/NilsJPWerner/autoDocstring/blob/HEAD/docs/pep257.md), which will help by creating an automated template for each class method and function.
 
 - [ ] Develop **two** user case unit tests that follow a testable hypothesis that you design for the Viterbi algorithm. State your hypothesis in the documentation.
-    - For example, in the lecture, we reviewed an example where the observations were the mental health of a rotating graduate student, and the hidden states were the rotation project's NIH funding.
+    - For example, in the lecture, we reviewed an example where the observations were the dedication of a rotating graduate student, and the hidden states were the rotation project's NIH funding.
 
 **Decision Questions, Reminders, & Important Notes**
 
@@ -117,7 +117,7 @@ def test_user_case_one():
     """_summary_
     """
     # index annotation observation_states=[i,j]    
-    observation_states = ['motivated','burned-out'] # A graduate student's mental health observed after a rotation
+    observation_states = ['comitted','ambivalent'] # A graduate student's dedication to their rotation lab
 
     # index annotation hidden_states=[i,j]
     hidden_states = ['R01','R21'] # The NIH funding source of the graduate student's rotation project 
