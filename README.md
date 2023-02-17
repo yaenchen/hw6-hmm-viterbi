@@ -117,7 +117,7 @@ def test_user_case_one():
     """_summary_
     """
     # index annotation observation_states=[i,j]    
-    observation_states = ['comitted','ambivalent'] # A graduate student's dedication to their rotation lab
+    observation_states = ['committed','ambivalent'] # A graduate student's dedication to their rotation lab
 
     # index annotation hidden_states=[i,j]
     hidden_states = ['R01','R21'] # The NIH funding source of the graduate student's rotation project 
