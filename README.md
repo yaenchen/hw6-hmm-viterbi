@@ -122,6 +122,11 @@ def test_user_case_one():
     # index annotation hidden_states=[i,j]
     hidden_states = ['R01','R21'] # The NIH funding source of the graduate student's rotation project 
 
+    #NOTE: Another use case example to consider:
+    # Example 1: 
+    # observation_states = ['EHR', 'molecular'] # Rotation project data-type
+    # hidden_states = ['Nature','Cell'] # Publication journal or impact factor
+
     # PONDERING QUESTION: How would a user define/compute their own HMM instantiation inputs to decode the hidden states for their use case observations?
     use_case_one_data = np.load('./data/UserCase-One.npz')
 
