@@ -1,17 +1,18 @@
 """
 UCSF BMI203: Biocomputing Algorithms
-Author:
-Date: 
-Program: 
-Description:
+Author: Yaen Chen
+Date: 2/24/2023
+Program: BMI
+Description: Pytest for project deliverable.
 """
 import pytest
 import numpy as np
-from models.hmm import HiddenMarkovModel
-from models.decoders import ViterbiAlgorithm
+from src.models.hmm import HiddenMarkovModel
+from src.models.decoders import ViterbiAlgorithm
 
 def test_deliverable():
-    """_summary_
+    """
+    Using an HMM to observed regulatory activity in the TBX5 TAD of cardiomyocytes based on cCRE selection strategies.
     """
     # index annotation observation_states=[i,j] 
     observation_states = ['regulatory', 'regulatory-potential'] # observed regulatory activity in the TBX5 TAD of cardiomyocytes

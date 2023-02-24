@@ -26,9 +26,15 @@ Please evaluate the project deliverable and briefly answer the following specula
 
 1. Speculate how the progenitor cardiomyocyte Hidden Markov Model and primitive cardiomyocyte regulatory observations and inferred hidden states might change if the model design's sliding window (default set to 60 kilobases) were to increase or decrease?
 
+If the model design's sliding window increased, this could reduce the specificity of the observations since we are grouping more data into one window. The hidden states would differ due to more grouping of the data when running ATAC-seq with a larger window, and I might expect the hidden states to be less accurate.
+
 2. How would you recommend integrating additional genomics data (i.e., histone and transcription factor ChIP-seq data) to update or revise the progenitor cardiomyocyte Hidden Markov Model? In your updated/revised model, how would you define the observation and hidden states, and the prior, transition, and emission probabilities? Using the updated/revised design, what new testable hypotheses would you be able to evaluate and/or disprove?
 
+Additional genomics data would need to be harmonized to match the existing ATAC-seq data. We would need to ensure that the integration of additional genomics data is standardized to the existing data, and the addition of observation/hidden states would introduce a different set of hypothesis that can be tested. I believe it would be important to evaluate the hidden states from the new data available separately, calculating their own transition and emission probabilities rather than lumping it all into one model.
+
 3. Following functional characterization (i.e., MPRA or CRISPRi/a) of progenitor and primitive cardiomyocytes, consider all possible scenarios for recommending how to update or revise our genomic annotation for *cis*-candidate regulatory elements (cCREs) and candidate regulatory elements (CREs)?
+
+The genomic annotation for *cis*-candidate regulatory elements (cCREs) and candidate regulatory elements (CREs) could then be compared to the functional characterization. We could now use the functional characterization as our new observed states, and the genomic annotations as new hidden states to observed the relationship between cCREs and CREs, and the observed phenotypes.
 
 
 Models Package 

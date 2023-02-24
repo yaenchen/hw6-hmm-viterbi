@@ -1,9 +1,8 @@
 """
 UCSF BMI203: Biocomputing Algorithms
-Author:
-Date:
-Package: 
-Description: 
+Author: Yaen Chen
+Date: 2/24/2023
+Package: Package for Hidden Markov Models
 """
 import numpy as np
 from .hmm import *

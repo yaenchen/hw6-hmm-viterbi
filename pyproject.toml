@@ -18,4 +18,4 @@ dependencies = ["pytest", "numpy", "scipy", "matplotlib", "scikit-learn", "sphin
 source = ["src"] # parent directory of package
 
 [project.urls]
-Home = "https://github.com/bmi203-2023/hw6-hmm-viterbi"
+Home = "https://github.com/yaenchen/hw6-hmm-viterbi"
